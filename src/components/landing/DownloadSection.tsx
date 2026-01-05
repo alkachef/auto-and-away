@@ -11,17 +11,17 @@ const DownloadSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-2 rounded-full mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm">Available Now</span>
+            <span className="text-sm">Jetzt Verfügbar</span>
           </div>
 
           {/* Headline */}
           <h2 className="section-heading mb-6">
-            Ready to Get Started?
+            Bereit Loszulegen?
           </h2>
           
           <p className="section-subheading mx-auto mb-10">
-            Download AutoHub today and experience the future of car care and rentals. 
-            Join 50,000+ happy customers.
+            Lade Hood Rent heute herunter und erlebe die Zukunft der Autopflege und Luxusvermietung. 
+            Schließe dich 50.000+ zufriedenen Kunden an.
           </p>
 
           {/* Download Buttons */}
@@ -32,7 +32,7 @@ const DownloadSection = () => {
             >
               <Apple className="w-7 h-7" />
               <div className="text-left">
-                <div className="text-xs opacity-80">Download on the</div>
+                <div className="text-xs opacity-80">Laden im</div>
                 <div className="font-semibold">App Store</div>
               </div>
             </a>
@@ -43,7 +43,7 @@ const DownloadSection = () => {
             >
               <Play className="w-7 h-7" />
               <div className="text-left">
-                <div className="text-xs opacity-80">Get it on</div>
+                <div className="text-xs opacity-80">Jetzt bei</div>
                 <div className="font-semibold">Google Play</div>
               </div>
             </a>
@@ -52,13 +52,13 @@ const DownloadSection = () => {
           {/* Trust badges */}
           <div className="flex items-center justify-center gap-8 mt-12 text-muted-foreground text-sm">
             <div className="flex items-center gap-2">
-              <span>⭐</span> 4.9 Rating
+              <span>⭐</span> 4.9 Bewertung
             </div>
             <div className="flex items-center gap-2">
-              <span>🔒</span> Secure
+              <span>🔒</span> Sicher
             </div>
             <div className="flex items-center gap-2">
-              <span>🆓</span> Free to Download
+              <span>🆓</span> Kostenlos
             </div>
           </div>
         </div>

@@ -3,18 +3,18 @@ import { ArrowRight, Star, Crown, Shield, Gem } from 'lucide-react';
 const features = [
   {
     icon: Crown,
-    title: 'VIP Experience',
-    description: 'White-glove service from pickup to return',
+    title: 'VIP Erlebnis',
+    description: 'Premium-Service von Abholung bis Rückgabe',
   },
   {
     icon: Shield,
-    title: 'Elite Insurance',
-    description: 'Premium coverage with zero deductible',
+    title: 'Elite Versicherung',
+    description: 'Premium-Deckung ohne Selbstbeteiligung',
   },
   {
     icon: Gem,
     title: 'Concierge Support',
-    description: 'Dedicated personal assistant 24/7',
+    description: 'Persönlicher Assistent rund um die Uhr',
   },
 ];
 
@@ -39,17 +39,17 @@ const HoodRentSection = () => {
           <div>
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/20 to-primary/5 border border-primary/30 px-5 py-2.5 rounded-full mb-8">
               <Crown className="w-4 h-4 text-primary" />
-              <span className="text-primary font-semibold text-sm tracking-wide uppercase">Hood Rent Exclusive</span>
+              <span className="text-primary font-semibold text-sm tracking-wide uppercase">Hood Rent Exklusiv</span>
             </div>
             
             <h2 className="section-heading mb-6">
-              Luxury Fleet,{' '}
-              <span className="text-gradient">Elite Access</span>
+              Luxusflotte,{' '}
+              <span className="text-gradient">Elite Zugang</span>
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Experience automotive excellence with our curated collection of the world's 
-              most prestigious vehicles. Reserved exclusively for discerning clientele.
+              Erlebe automobile Exzellenz mit unserer kuratierten Kollektion der 
+              prestigeträchtigsten Fahrzeuge der Welt. Exklusiv für anspruchsvolle Kunden.
             </p>
 
             {/* Features */}
@@ -69,7 +69,7 @@ const HoodRentSection = () => {
 
             <a href="#download" className="btn-primary inline-flex items-center gap-3 group text-lg">
               <Crown className="w-5 h-5" />
-              Access Exclusive Fleet
+              Exklusive Flotte Entdecken
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
@@ -97,7 +97,7 @@ const HoodRentSection = () => {
                     <span className="text-foreground font-semibold">{car.rating}</span>
                   </div>
                   <div className="font-display font-bold text-2xl">
-                    {car.price}<span className="text-sm text-muted-foreground font-normal">/day</span>
+                    {car.price}<span className="text-sm text-muted-foreground font-normal">/Tag</span>
                   </div>
                 </div>
               </div>
@@ -105,9 +105,9 @@ const HoodRentSection = () => {
 
             <div className="glass rounded-2xl p-8 text-center border-primary/20 border-dashed border-2 bg-gradient-to-b from-primary/5 to-transparent">
               <Crown className="w-8 h-8 text-primary mx-auto mb-3" />
-              <p className="text-muted-foreground mb-3 text-lg">50+ Ultra-Luxury Vehicles</p>
+              <p className="text-muted-foreground mb-3 text-lg">50+ Ultra-Luxusfahrzeuge</p>
               <a href="#download" className="text-primary font-semibold hover:underline text-lg inline-flex items-center gap-2">
-                View Full Collection <ArrowRight className="w-4 h-4" />
+                Komplette Kollektion <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>

@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroCar}
-          alt="Luxury sports car"
+          alt="Luxus Sportwagen"
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
@@ -21,40 +21,40 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-slide-up opacity-0">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground">Your Complete Car Solution</span>
+            <span className="text-sm text-muted-foreground">Deine Premium Auto-Lösung</span>
           </div>
 
           {/* Headline */}
           <h1 className="section-heading mb-6 animate-slide-up opacity-0 delay-100">
-            Everything Your Car Needs,{' '}
-            <span className="text-gradient">One App</span>
+            Alles für Dein Auto,{' '}
+            <span className="text-gradient">Eine App</span>
           </h1>
 
           {/* Subheadline */}
           <p className="section-subheading mx-auto mb-10 animate-slide-up opacity-0 delay-200">
-            From tyre changes to full maintenance, plus premium car rentals from Hood Rent. 
-            Experience the future of car care and mobility.
+            Von Reifenwechsel bis zur Vollwartung, plus exklusive Luxusfahrzeuge von Hood Rent. 
+            Erlebe die Zukunft der Autopflege und Mobilität.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up opacity-0 delay-300">
             <a href="#services" className="btn-primary inline-flex items-center gap-2 group">
               <Wrench className="w-5 h-5" />
-              Explore Services
+              Services Entdecken
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="#hoodrent" className="btn-secondary inline-flex items-center gap-2">
               <Car className="w-5 h-5" />
-              Rent a Car
+              Luxuswagen Mieten
             </a>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 animate-slide-up opacity-0 delay-400">
             {[
-              { value: '50K+', label: 'Happy Customers' },
-              { value: '200+', label: 'Service Partners' },
-              { value: '500+', label: 'Cars Available' },
+              { value: '50K+', label: 'Zufriedene Kunden' },
+              { value: '200+', label: 'Service Partner' },
+              { value: '500+', label: 'Luxusfahrzeuge' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-display font-bold text-gradient">

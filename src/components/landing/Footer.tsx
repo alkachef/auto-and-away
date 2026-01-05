@@ -1,11 +1,12 @@
-import { Car, Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
+import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
+import DusseldorfTowerIcon from './DusseldorfTowerIcon';
 
 const Footer = () => {
   const footerLinks = {
-    Services: ['Tyre Change', 'Oil Service', 'Battery', 'Full Inspection', 'Repairs'],
-    'Hood Rent': ['Browse Fleet', 'Pricing', 'Locations', 'Business Rentals'],
-    Company: ['About Us', 'Careers', 'Press', 'Partners'],
-    Support: ['Help Center', 'Contact', 'Safety', 'Terms', 'Privacy'],
+    Services: ['Reifenwechsel', 'Öl-Service', 'Batterie', 'Inspektion', 'Reparaturen'],
+    'Hood Rent': ['Flotte Durchstöbern', 'Preise', 'Standorte', 'Business Vermietung'],
+    Unternehmen: ['Über Uns', 'Karriere', 'Presse', 'Partner'],
+    Support: ['Hilfe Center', 'Kontakt', 'Sicherheit', 'AGB', 'Datenschutz'],
   };
 
   const socialLinks = [
@@ -21,14 +22,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
+            <a href="#" className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <Car className="w-5 h-5 text-primary-foreground" />
+                <DusseldorfTowerIcon className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-display font-bold text-xl">AutoHub</span>
+              <span className="font-gta text-xl tracking-wider text-gradient">HOOD RENT</span>
             </a>
             <p className="text-muted-foreground mb-6 max-w-xs">
-              Your complete car solution. Services, rentals, and everything in between.
+              Deine komplette Auto-Lösung. Services, Luxusvermietung und alles dazwischen.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social, index) => (
@@ -66,10 +67,10 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2025 AutoHub. All rights reserved.
+            © 2025 Hood Rent. Alle Rechte vorbehalten.
           </p>
           <p className="text-muted-foreground text-sm">
-            Hood Rent is a registered trademark.
+            Hood Rent ist eine eingetragene Marke. Düsseldorf, Deutschland.
           </p>
         </div>
       </div>
