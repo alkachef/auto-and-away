@@ -4,26 +4,26 @@ const steps = [
   {
     icon: Download,
     step: '01',
-    title: 'Download the App',
-    description: 'Get AutoHub from the App Store or Google Play in seconds.',
+    title: 'App Herunterladen',
+    description: 'Hole dir Hood Rent im App Store oder Google Play in Sekunden.',
   },
   {
     icon: MapPin,
     step: '02',
-    title: 'Choose Your Service',
-    description: 'Select from car services or browse our Hood Rent fleet.',
+    title: 'Service Wählen',
+    description: 'Wähle aus Auto-Services oder durchstöbere unsere Luxusflotte.',
   },
   {
     icon: CalendarCheck,
     step: '03',
-    title: 'Book & Schedule',
-    description: 'Pick your preferred date, time, and location.',
+    title: 'Buchen & Planen',
+    description: 'Wähle dein Wunschdatum, Uhrzeit und Standort.',
   },
   {
     icon: Sparkles,
     step: '04',
-    title: 'Enjoy the Experience',
-    description: 'Sit back while we handle everything for you.',
+    title: 'Genießen',
+    description: 'Lehn dich zurück während wir alles für dich erledigen.',
   },
 ];
 
@@ -34,14 +34,14 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            How It Works
+            So Geht's
           </span>
           <h2 className="section-heading mt-4 mb-6">
-            Simple as{' '}
+            Einfach wie{' '}
             <span className="text-gradient">1-2-3-4</span>
           </h2>
           <p className="section-subheading mx-auto">
-            Getting started takes less than a minute. Here's how it works.
+            Der Start dauert weniger als eine Minute. So funktioniert's.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const HowItWorks = () => {
 
                 {/* Step indicator */}
                 <div className="text-primary font-display font-bold text-sm mb-2">
-                  Step {item.step}
+                  Schritt {item.step}
                 </div>
 
                 {/* Content */}

@@ -3,33 +3,33 @@ import { Wrench, Shield, Battery, Gauge, Droplets, Settings } from 'lucide-react
 const services = [
   {
     icon: Wrench,
-    title: 'Tyre Services',
-    description: 'Tyre change, balancing, alignment, and puncture repair at your doorstep.',
+    title: 'Reifen-Service',
+    description: 'Reifenwechsel, Auswuchten, Spureinstellung und Pannenhilfe direkt vor Ort.',
   },
   {
     icon: Droplets,
-    title: 'Oil & Fluids',
-    description: 'Complete oil change, brake fluid, coolant, and transmission fluid services.',
+    title: 'Öl & Flüssigkeiten',
+    description: 'Kompletter Ölwechsel, Bremsflüssigkeit, Kühlmittel und Getriebeöl-Service.',
   },
   {
     icon: Battery,
-    title: 'Battery Service',
-    description: 'Battery testing, jump-start, replacement, and disposal handled professionally.',
+    title: 'Batterie-Service',
+    description: 'Batterietest, Starthilfe, Austausch und fachgerechte Entsorgung.',
   },
   {
     icon: Shield,
-    title: 'Full Inspection',
-    description: 'Comprehensive vehicle health check with detailed digital reports.',
+    title: 'Vollinspektion',
+    description: 'Umfassender Fahrzeug-Check mit detailliertem digitalem Bericht.',
   },
   {
     icon: Gauge,
-    title: 'Performance Tune',
-    description: 'Engine diagnostics, performance optimization, and ECU tuning.',
+    title: 'Performance Tuning',
+    description: 'Motordiagnose, Leistungsoptimierung und ECU-Tuning.',
   },
   {
     icon: Settings,
-    title: 'General Repairs',
-    description: 'Brake pads, suspension, AC service, and all mechanical repairs.',
+    title: 'Allgemeine Reparaturen',
+    description: 'Bremsbeläge, Fahrwerk, Klimaservice und alle mechanischen Reparaturen.',
   },
 ];
 
@@ -43,14 +43,14 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Our Services
+            Unsere Services
           </span>
           <h2 className="section-heading mt-4 mb-6">
-            Complete Car Care,{' '}
-            <span className="text-gradient">Anytime</span>
+            Komplette Autopflege,{' '}
+            <span className="text-gradient">Jederzeit</span>
           </h2>
           <p className="section-subheading mx-auto">
-            Professional services delivered to your location. No more waiting at garages.
+            Professionelle Services direkt zu dir. Kein Warten mehr in der Werkstatt.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const ServicesSection = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <a href="#download" className="btn-secondary inline-flex items-center gap-2">
-            View All Services
+            Alle Services Anzeigen
           </a>
         </div>
       </div>

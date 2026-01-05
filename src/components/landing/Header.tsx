@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import { Menu, X, Car } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import DusseldorfTowerIcon from './DusseldorfTowerIcon';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { label: 'Services', href: '#services' },
-    { label: 'Hood Rent', href: '#hoodrent' },
-    { label: 'How It Works', href: '#how-it-works' },
+    { label: 'Luxusflotte', href: '#hoodrent' },
+    { label: 'So Geht\'s', href: '#how-it-works' },
     { label: 'Download', href: '#download' },
   ];
 
@@ -16,11 +17,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
-              <Car className="w-5 h-5 text-primary-foreground" />
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
+              <DusseldorfTowerIcon className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl">AutoHub</span>
+            <span className="font-gta text-2xl tracking-wider text-gradient">HOOD RENT</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -39,7 +40,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a href="#download" className="btn-primary text-sm">
-              Get the App
+              App Holen
             </a>
           </div>
 
@@ -67,7 +68,7 @@ const Header = () => {
                 </a>
               ))}
               <a href="#download" className="btn-primary text-center text-sm mt-2">
-                Get the App
+                App Holen
               </a>
             </div>
           </nav>
