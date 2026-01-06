@@ -1,27 +1,28 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import DusseldorfTowerIcon from './DusseldorfTowerIcon';
+import { Menu, X, Phone } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Services', href: '#services' },
-    { label: 'Luxusflotte', href: '#hoodrent' },
+    { label: 'Flotte', href: '#fleet' },
+    { label: 'Buchen', href: '#booking' },
     { label: 'So Geht\'s', href: '#how-it-works' },
-    { label: 'Download', href: '#download' },
+    { label: 'Kontakt', href: '#contact' },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-strong">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
-              <DusseldorfTowerIcon className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="font-gta text-2xl tracking-wider text-gradient">HOOD RENT</span>
+            <img 
+              src={logo} 
+              alt="Hood Rent Logo" 
+              className="h-12 w-auto brightness-0 invert"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -30,7 +31,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
@@ -38,9 +39,13 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <a href="#download" className="btn-primary text-sm">
-              App Holen
+          <div className="hidden md:flex items-center gap-4">
+            <a href="tel:+491234567890" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+              <Phone className="w-4 h-4" />
+              <span className="text-sm">+49 123 456 7890</span>
+            </a>
+            <a href="#booking" className="btn-primary text-sm">
+              Jetzt Buchen
             </a>
           </div>
 
@@ -67,8 +72,8 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <a href="#download" className="btn-primary text-center text-sm mt-2">
-                App Holen
+              <a href="#booking" className="btn-primary text-center text-sm mt-2">
+                Jetzt Buchen
               </a>
             </div>
           </nav>

@@ -1,29 +1,29 @@
-import { Download, MapPin, CalendarCheck, Sparkles } from 'lucide-react';
+import { Car, CalendarCheck, Key, Sparkles } from 'lucide-react';
 
 const steps = [
   {
-    icon: Download,
+    icon: Car,
     step: '01',
-    title: 'App Herunterladen',
-    description: 'Hole dir Hood Rent im App Store oder Google Play in Sekunden.',
-  },
-  {
-    icon: MapPin,
-    step: '02',
-    title: 'Service Wählen',
-    description: 'Wähle aus Auto-Services oder durchstöbere unsere Luxusflotte.',
+    title: 'Supercar Wählen',
+    description: 'Entdecke unsere exklusive Flotte und wähle deinen Traumwagen.',
   },
   {
     icon: CalendarCheck,
+    step: '02',
+    title: 'Datum Reservieren',
+    description: 'Prüfe die Verfügbarkeit und buche deinen Wunschtermin online.',
+  },
+  {
+    icon: Key,
     step: '03',
-    title: 'Buchen & Planen',
-    description: 'Wähle dein Wunschdatum, Uhrzeit und Standort.',
+    title: 'Schlüssel Abholen',
+    description: 'Hole dein Fahrzeug ab oder lass es direkt zu dir liefern.',
   },
   {
     icon: Sparkles,
     step: '04',
-    title: 'Genießen',
-    description: 'Lehn dich zurück während wir alles für dich erledigen.',
+    title: 'Erlebnis Genießen',
+    description: 'Genieße pure Fahrfreude und unvergessliche Momente.',
   },
 ];
 
@@ -37,11 +37,11 @@ const HowItWorks = () => {
             So Geht's
           </span>
           <h2 className="section-heading mt-4 mb-6">
-            Einfach wie{' '}
-            <span className="text-gradient">1-2-3-4</span>
+            In 4 Schritten zum{' '}
+            <span className="text-gradient">Supercar</span>
           </h2>
           <p className="section-subheading mx-auto">
-            Der Start dauert weniger als eine Minute. So funktioniert's.
+            Von der Auswahl bis zur Übergabe – einfacher geht's nicht.
           </p>
         </div>
 

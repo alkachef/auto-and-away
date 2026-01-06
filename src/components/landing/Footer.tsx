@@ -1,47 +1,55 @@
-import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
-import DusseldorfTowerIcon from './DusseldorfTowerIcon';
+import { Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const footerLinks = {
-    Services: ['Reifenwechsel', 'Öl-Service', 'Batterie', 'Inspektion', 'Reparaturen'],
-    'Hood Rent': ['Flotte Durchstöbern', 'Preise', 'Standorte', 'Business Vermietung'],
-    Unternehmen: ['Über Uns', 'Karriere', 'Presse', 'Partner'],
-    Support: ['Hilfe Center', 'Kontakt', 'Sicherheit', 'AGB', 'Datenschutz'],
+    'Flotte': ['Lamborghini', 'Ferrari', 'Porsche', 'Bentley', 'McLaren', 'Rolls-Royce'],
+    'Service': ['Buchung', 'Lieferung', 'Concierge', 'Events', 'Hochzeiten'],
+    'Rechtliches': ['AGB', 'Datenschutz', 'Impressum', 'Mietbedingungen'],
   };
 
-  const socialLinks = [
-    { icon: Instagram, href: '#' },
-    { icon: Twitter, href: '#' },
-    { icon: Facebook, href: '#' },
-    { icon: Linkedin, href: '#' },
-  ];
-
   return (
-    <footer className="bg-card border-t border-border">
+    <footer id="contact" className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <DusseldorfTowerIcon className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="font-gta text-xl tracking-wider text-gradient">HOOD RENT</span>
+            <a href="#" className="flex items-center gap-3 mb-6">
+              <img 
+                src={logo} 
+                alt="Hood Rent Logo" 
+                className="h-14 w-auto brightness-0 invert"
+              />
             </a>
             <p className="text-muted-foreground mb-6 max-w-xs">
-              Deine komplette Auto-Lösung. Services, Luxusvermietung und alles dazwischen.
+              Exklusive Supercar-Vermietung in Düsseldorf. 
+              Erlebe Luxusfahrzeuge der Extraklasse.
             </p>
-            <div className="flex items-center gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+            
+            {/* Contact Info */}
+            <div className="space-y-3 mb-6">
+              <a href="tel:+491234567890" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                <Phone className="w-4 h-4 text-primary" />
+                <span>+49 123 456 7890</span>
+              </a>
+              <a href="mailto:info@hoodrent.de" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                <Mail className="w-4 h-4 text-primary" />
+                <span>info@hoodrent.de</span>
+              </a>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span>Düsseldorf, Deutschland</span>
+              </div>
             </div>
+            
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 w-10 h-10 rounded-lg bg-secondary justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
 
           {/* Links */}
@@ -70,7 +78,7 @@ const Footer = () => {
             © 2025 Hood Rent. Alle Rechte vorbehalten.
           </p>
           <p className="text-muted-foreground text-sm">
-            Hood Rent ist eine eingetragene Marke. Düsseldorf, Deutschland.
+            Premium Supercar-Vermietung · Düsseldorf, Deutschland
           </p>
         </div>
       </div>

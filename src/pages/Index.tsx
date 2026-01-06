@@ -1,9 +1,8 @@
 import Header from '@/components/landing/Header';
 import HeroSection from '@/components/landing/HeroSection';
-import ServicesSection from '@/components/landing/ServicesSection';
-import HoodRentSection from '@/components/landing/HoodRentSection';
+import FleetSection from '@/components/landing/FleetSection';
+import BookingSection from '@/components/landing/BookingSection';
 import HowItWorks from '@/components/landing/HowItWorks';
-import DownloadSection from '@/components/landing/DownloadSection';
 import Footer from '@/components/landing/Footer';
 
 const Index = () => {
@@ -12,10 +11,9 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
-        <HoodRentSection />
+        <FleetSection />
+        <BookingSection />
         <HowItWorks />
-        <DownloadSection />
       </main>
       <Footer />
     </div>
