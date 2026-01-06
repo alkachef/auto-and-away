@@ -1,5 +1,5 @@
 import heroCar from '@/assets/hero-car.jpg';
-import { ArrowRight, Wrench, Car } from 'lucide-react';
+import { ArrowRight, Crown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -8,8 +8,8 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroCar}
-          alt="Luxus Sportwagen"
-          className="w-full h-full object-cover opacity-60"
+          alt="Luxus Supercar"
+          className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
         <div className="absolute inset-0 bg-glow opacity-50 animate-pulse-glow" />
@@ -20,41 +20,40 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-slide-up opacity-0">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground">Deine Premium Auto-Lösung</span>
+            <Crown className="w-4 h-4 text-primary" />
+            <span className="text-sm text-muted-foreground">Exklusive Supercar-Vermietung in Düsseldorf</span>
           </div>
 
           {/* Headline */}
           <h1 className="section-heading mb-6 animate-slide-up opacity-0 delay-100">
-            Alles für Dein Auto,{' '}
-            <span className="text-gradient">Eine App</span>
+            Dein Traum-Supercar,{' '}
+            <span className="text-gradient">Ein Klick Entfernt</span>
           </h1>
 
           {/* Subheadline */}
           <p className="section-subheading mx-auto mb-10 animate-slide-up opacity-0 delay-200">
-            Von Reifenwechsel bis zur Vollwartung, plus exklusive Luxusfahrzeuge von Hood Rent. 
-            Erlebe die Zukunft der Autopflege und Mobilität.
+            Erlebe die Faszination italienischer Supercars und britischer Luxusfahrzeuge. 
+            Ferrari, Lamborghini, Bentley und mehr – bereit für dein nächstes Abenteuer.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up opacity-0 delay-300">
-            <a href="#services" className="btn-primary inline-flex items-center gap-2 group">
-              <Wrench className="w-5 h-5" />
-              Services Entdecken
+            <a href="#fleet" className="btn-primary inline-flex items-center gap-2 group">
+              <Crown className="w-5 h-5" />
+              Flotte Entdecken
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="#hoodrent" className="btn-secondary inline-flex items-center gap-2">
-              <Car className="w-5 h-5" />
-              Luxuswagen Mieten
+            <a href="#booking" className="btn-secondary inline-flex items-center gap-2">
+              Verfügbarkeit Prüfen
             </a>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 animate-slide-up opacity-0 delay-400">
             {[
-              { value: '50K+', label: 'Zufriedene Kunden' },
-              { value: '200+', label: 'Service Partner' },
-              { value: '500+', label: 'Luxusfahrzeuge' },
+              { value: '15+', label: 'Supercars' },
+              { value: '500+', label: 'Zufriedene Kunden' },
+              { value: '24/7', label: 'Concierge Service' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-display font-bold text-gradient">
