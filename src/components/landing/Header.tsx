@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { label: 'Flotte', href: '#fleet' },
-    { label: 'Buchen', href: '#booking' },
-    { label: 'So Geht\'s', href: '#how-it-works' },
     { label: 'Kontakt', href: '#contact' },
   ];
 
@@ -16,13 +13,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-strong">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo Text */}
           <a href="#" className="flex items-center gap-3 group">
-            <img 
-              src={logo} 
-              alt="Hood Rent Logo" 
-              className="h-12 w-auto brightness-0 invert"
-            />
+            <span className="font-gta text-3xl tracking-wider text-gradient">
+              LuayCars
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -44,8 +39,8 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span className="text-sm">+49 123 456 7890</span>
             </a>
-            <a href="#booking" className="btn-primary text-sm">
-              Jetzt Buchen
+            <a href="#fleet" className="btn-primary text-sm">
+              Jetzt Mieten
             </a>
           </div>
 
@@ -72,8 +67,8 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <a href="#booking" className="btn-primary text-center text-sm mt-2">
-                Jetzt Buchen
+              <a href="#fleet" className="btn-primary text-center text-sm mt-2">
+                Jetzt Mieten
               </a>
             </div>
           </nav>
