@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Flotte', href: '#fleet' },
-    { label: 'Kontakt', href: '#contact' },
+    { label: 'Flotte', href: '/#fleet' },
+    { label: 'Kontakt', href: '/#contact' },
   ];
 
   return (
@@ -14,11 +15,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo Text */}
-          <a href="#" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group">
             <span className="font-gta text-3xl tracking-wider text-gradient">
               LuayCars
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -39,7 +40,7 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span className="text-sm">+49 123 456 7890</span>
             </a>
-            <a href="#fleet" className="btn-primary text-sm">
+            <a href="/#fleet" className="btn-primary text-sm">
               Jetzt Mieten
             </a>
           </div>
@@ -67,7 +68,7 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <a href="#fleet" className="btn-primary text-center text-sm mt-2">
+              <a href="/#fleet" className="btn-primary text-center text-sm mt-2">
                 Jetzt Mieten
               </a>
             </div>
