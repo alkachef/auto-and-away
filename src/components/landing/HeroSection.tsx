@@ -1,9 +1,9 @@
 import heroCar from '@/assets/hero-car.jpg';
-import { ArrowRight, Crown } from 'lucide-react';
+import { ArrowRight, Car } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -20,31 +20,28 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-slide-up opacity-0">
-            <Crown className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Exklusive Supercar-Vermietung in Düsseldorf</span>
+            <Car className="w-4 h-4 text-primary" />
+            <span className="text-sm text-muted-foreground">Premium Supercars in Düsseldorf</span>
           </div>
 
           {/* Headline */}
           <h1 className="section-heading mb-6 animate-slide-up opacity-0 delay-100">
-            Dein Traum-Supercar,{' '}
-            <span className="text-gradient">Ein Klick Entfernt</span>
+            <span className="text-gradient">LuayCars</span>
+            <br />
+            <span className="text-2xl md:text-4xl font-medium text-muted-foreground">Dein Traumwagen wartet</span>
           </h1>
 
           {/* Subheadline */}
           <p className="section-subheading mx-auto mb-10 animate-slide-up opacity-0 delay-200">
-            Erlebe die Faszination italienischer Supercars und britischer Luxusfahrzeuge. 
-            Ferrari, Lamborghini, Bentley und mehr – bereit für dein nächstes Abenteuer.
+            Ferrari, Lamborghini, Porsche & mehr – wähle dein Fahrzeug und fahre noch heute los.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up opacity-0 delay-300">
-            <a href="#fleet" className="btn-primary inline-flex items-center gap-2 group">
-              <Crown className="w-5 h-5" />
-              Flotte Entdecken
+            <a href="#fleet" className="btn-primary inline-flex items-center gap-2 group text-lg px-8 py-4">
+              <Car className="w-5 h-5" />
+              Jetzt Auto Wählen
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
-            <a href="#booking" className="btn-secondary inline-flex items-center gap-2">
-              Verfügbarkeit Prüfen
             </a>
           </div>
 
@@ -53,7 +50,7 @@ const HeroSection = () => {
             {[
               { value: '15+', label: 'Supercars' },
               { value: '500+', label: 'Zufriedene Kunden' },
-              { value: '24/7', label: 'Concierge Service' },
+              { value: '24/7', label: 'Support' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-display font-bold text-gradient">
@@ -63,13 +60,6 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
         </div>
       </div>
     </section>
