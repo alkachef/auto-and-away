@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, Clock, Phone, CheckCirc
 import { getCarBySlug } from '@/lib/cars';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
+import CarSpecSheet from '@/components/CarSpecSheet';
 
 const extras = [
   { id: 'kindersitz', name: 'Kindersitz', price: 25, icon: Baby, description: 'ISOFIX-Kindersitz für Kinder 9-36kg' },
@@ -150,32 +151,34 @@ const CarBooking = () => {
             Zurück zur Auswahl
           </Link>
 
-          {/* Car Header */}
+          {/* Car Header with Image */}
           <div className="glass rounded-2xl overflow-hidden mb-8">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative h-64 md:h-auto">
-                <img 
-                  src={car.image} 
-                  alt={car.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/80 hidden md:block" />
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+            <div className="relative h-64 md:h-80">
+              <img 
+                src={car.image} 
+                alt={car.name}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-2 block">
                   {car.category}
                 </span>
-                <h1 className="font-display font-bold text-3xl md:text-4xl mb-3">
+                <h1 className="font-display font-bold text-3xl md:text-4xl mb-2">
                   {car.name}
                 </h1>
-                <p className="text-muted-foreground mb-4">{car.description}</p>
                 <div className="flex items-center gap-4">
-                  <span className="text-3xl font-display font-bold text-primary">€{car.price}</span>
+                  <span className="text-3xl font-display font-bold text-primary">ab €{car.price}</span>
                   <span className="text-muted-foreground">/Tag</span>
                   <span className="glass px-3 py-1 rounded-full text-sm font-semibold">{car.hp}</span>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Spec Sheet / Datenblatt */}
+          <div className="mb-8">
+            <CarSpecSheet car={car} />
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
