@@ -1,4 +1,5 @@
 import { Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const footerLinks = {
@@ -12,8 +13,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="inline-block mb-6">
-              <span className="font-gta text-4xl tracking-wider text-gradient">
+            <a href="#" className="inline-flex items-center gap-3 mb-6">
+              <img src={logo} alt="LuayCars" className="h-16 w-auto" />
+              <span className="font-gta text-3xl tracking-wider">
                 LuayCars
               </span>
             </a>

@@ -1,5 +1,6 @@
 import { Car } from '@/lib/cars';
 import { Gauge, Zap, Timer, Settings, Car as CarIcon, Volume2, Eye, Crown, TrendingUp, Heart } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 interface CarSpecSheetProps {
   car: Car;
@@ -12,8 +13,9 @@ const CarSpecSheet = ({ car }: CarSpecSheetProps) => {
       <div className="relative bg-gradient-to-b from-background to-card p-6 border-b border-border">
         <div className="absolute top-0 left-0 right-0 h-4 bg-[repeating-linear-gradient(90deg,hsl(var(--foreground))_0px,hsl(var(--foreground))_10px,transparent_10px,transparent_20px)] opacity-20" />
         
-        <div className="text-center mt-2">
-          <p className="text-primary font-semibold text-sm tracking-widest mb-2">LUAY CARS PRÄSENTIERT:</p>
+        <div className="flex flex-col items-center mt-2">
+          <img src={logo} alt="LuayCars" className="h-20 w-auto mb-4" />
+          <p className="text-muted-foreground font-semibold text-sm tracking-widest mb-2">LUAY CARS PRÄSENTIERT:</p>
           <h2 className="font-display font-bold text-2xl md:text-3xl">{car.name}</h2>
         </div>
       </div>
