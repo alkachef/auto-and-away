@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-strong">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo Text */}
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <span className="font-gta text-3xl tracking-wider text-gradient">
+            <img src={logo} alt="LuayCars" className="h-12 w-auto" />
+            <span className="font-gta text-2xl tracking-wider">
               LuayCars
             </span>
           </Link>
