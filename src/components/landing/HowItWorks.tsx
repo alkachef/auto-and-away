@@ -51,7 +51,7 @@ const HowItWorks = () => {
             <div key={item.step} className="relative group">
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+                <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent" />
               )}
 
               <div className="text-center">
@@ -61,7 +61,7 @@ const HowItWorks = () => {
                 </div>
 
                 {/* Step indicator */}
-                <div className="text-primary font-display font-bold text-sm mb-2">
+                <div className="text-accent font-display font-bold text-sm mb-2">
                   Schritt {item.step}
                 </div>
 

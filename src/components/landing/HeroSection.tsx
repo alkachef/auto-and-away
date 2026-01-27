@@ -18,8 +18,8 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6 animate-slide-up opacity-0">
-            <Car className="w-4 h-4 text-primary" />
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6 animate-slide-up opacity-0 border-accent/30">
+            <Car className="w-4 h-4 text-accent" />
             <span className="text-sm text-muted-foreground">Premium Supercars in Düsseldorf</span>
           </div>
 
@@ -40,7 +40,7 @@ const HeroSection = () => {
               { value: '24/7', label: 'Support' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl font-display font-bold text-primary">
+                <div className="text-2xl font-display font-bold text-accent">
                   {stat.value}
                 </div>
                 <div className="text-xs text-muted-foreground">{stat.label}</div>
