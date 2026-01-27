@@ -26,7 +26,7 @@ const FleetSection = () => {
             <Link
               key={car.id}
               to={`/buchen/${car.slug}`}
-              className="glass rounded-2xl overflow-hidden text-left group transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-glow block"
+              className="glass rounded-2xl overflow-hidden text-left group transition-all duration-500 hover:-translate-y-2 hover:border-accent/50 hover:shadow-glow block"
             >
               {/* Car Image */}
               <div className="relative h-48 overflow-hidden">
@@ -46,11 +46,11 @@ const FleetSection = () => {
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs text-primary/80 font-medium uppercase tracking-wider">{car.category}</span>
                   <div className="flex items-center gap-1">
-                    <Star className="w-3.5 h-3.5 fill-primary text-primary" />
+                    <Star className="w-3.5 h-3.5 fill-accent text-accent" />
                     <span className="text-sm font-semibold">{car.rating}</span>
                   </div>
                 </div>
-                <h3 className="font-display font-bold text-lg mb-3 group-hover:text-primary transition-colors">
+                <h3 className="font-display font-bold text-lg mb-3 group-hover:text-accent transition-colors">
                   {car.name}
                 </h3>
                 <div className="flex items-center justify-between">
@@ -58,7 +58,7 @@ const FleetSection = () => {
                     <span className="font-display font-bold text-2xl text-primary">€{car.price}</span>
                     <span className="text-sm text-muted-foreground">/Tag</span>
                   </div>
-                  <span className="flex items-center gap-1 text-primary font-semibold text-sm group-hover:gap-2 transition-all">
+                  <span className="flex items-center gap-1 text-accent font-semibold text-sm group-hover:gap-2 transition-all">
                     Buchen <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>

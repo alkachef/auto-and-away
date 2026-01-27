@@ -29,7 +29,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+                className="text-muted-foreground hover:text-accent transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
@@ -38,7 +38,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+491234567890" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a href="tel:+491234567890" className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
               <span className="text-sm">+49 123 456 7890</span>
             </a>
