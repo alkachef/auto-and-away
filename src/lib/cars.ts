@@ -40,7 +40,7 @@ export const cars: Car[] = [
     price: 800, 
     rating: 5.0, 
     hp: '640 PS',
-    image: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?w=600&h=400&fit=crop',
+    image: '/images/lamborghini-huracan.jpg',
     description: 'Brachialer V10 Sound ohne OPF - Neuer LP-640 EVO Motor verbaut.',
     maxSpeed: '330 km/h',
     torque: '600 NM',
