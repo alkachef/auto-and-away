@@ -77,7 +77,7 @@ export const cars: Car[] = [
     price: 300, 
     rating: 5.0, 
     hp: '510 PS',
-    image: 'https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop',
+    image: '/images/mercedes-c63s.jpg',
     description: 'Explosiver V8 Sound trotz OPF - Vollausgestattete 5-Sitzer Limousine.',
     maxSpeed: '290 km/h',
     torque: '700 NM',
