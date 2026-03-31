@@ -26,16 +26,16 @@ const Footer = () => {
             
             {/* Contact Info */}
             <div className="space-y-3 mb-6">
-              <a href="tel:+491234567890" className="flex items-center gap-3 text-foreground/80 hover:text-foreground transition-colors">
-                <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:+491234567890" className="flex items-center gap-3 text-[hsl(0,0%,25%)] hover:text-[hsl(0,0%,5%)] transition-colors">
+                <Phone className="w-4 h-4 text-accent" />
                 <span>+49 123 456 7890</span>
               </a>
-              <a href="mailto:info@luaycars.de" className="flex items-center gap-3 text-foreground/80 hover:text-foreground transition-colors">
-                <Mail className="w-4 h-4 text-primary" />
+              <a href="mailto:info@luaycars.de" className="flex items-center gap-3 text-[hsl(0,0%,25%)] hover:text-[hsl(0,0%,5%)] transition-colors">
+                <Mail className="w-4 h-4 text-accent" />
                 <span>info@luaycars.de</span>
               </a>
-              <div className="flex items-center gap-3 text-foreground/80">
-                <MapPin className="w-4 h-4 text-primary" />
+              <div className="flex items-center gap-3 text-[hsl(0,0%,25%)]">
+                <MapPin className="w-4 h-4 text-accent" />
                 <span>Düsseldorf, Deutschland</span>
               </div>
             </div>
