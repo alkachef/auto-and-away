@@ -14,8 +14,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="inline-flex items-center gap-3 mb-6">
-              <img src={logo} alt="LuayCars" className="h-24 w-auto" />
-              <span className="font-gta text-3xl tracking-wider">
+              <img src={logo} alt="LuayCars" className="h-28 w-auto" />
+              <span className="font-cursive text-3xl tracking-wider italic">
                 LuayCars
               </span>
             </a>
