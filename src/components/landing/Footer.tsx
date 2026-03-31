@@ -19,7 +19,7 @@ const Footer = () => {
                 LuayCars
               </span>
             </a>
-            <p className="text-muted-foreground mb-6 max-w-xs">
+            <p className="text-foreground/80 mb-6 max-w-xs">
               Exklusive Supercar-Vermietung in Düsseldorf. 
               Erlebe Luxusfahrzeuge der Extraklasse.
             </p>
