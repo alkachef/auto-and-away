@@ -24,7 +24,7 @@ const HeroSection = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-gta text-5xl md:text-7xl tracking-wider mb-4 animate-slide-up opacity-0 delay-100">
+          <h1 className="font-cursive italic text-5xl md:text-7xl tracking-wider mb-4 animate-slide-up opacity-0 delay-100">
             <span className="text-gradient">LuayCars</span>
           </h1>
           
