@@ -26,15 +26,15 @@ const Footer = () => {
             
             {/* Contact Info */}
             <div className="space-y-3 mb-6">
-              <a href="tel:+491234567890" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              <a href="tel:+491234567890" className="flex items-center gap-3 text-foreground/80 hover:text-foreground transition-colors">
                 <Phone className="w-4 h-4 text-primary" />
                 <span>+49 123 456 7890</span>
               </a>
-              <a href="mailto:info@luaycars.de" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              <a href="mailto:info@luaycars.de" className="flex items-center gap-3 text-foreground/80 hover:text-foreground transition-colors">
                 <Mail className="w-4 h-4 text-primary" />
                 <span>info@luaycars.de</span>
               </a>
-              <div className="flex items-center gap-3 text-muted-foreground">
+              <div className="flex items-center gap-3 text-foreground/80">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span>Düsseldorf, Deutschland</span>
               </div>
