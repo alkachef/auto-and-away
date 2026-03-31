@@ -72,10 +72,10 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-foreground/70 text-sm">
             © 2025 LuayCars. Alle Rechte vorbehalten.
           </p>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-foreground/70 text-sm">
             Premium Supercar-Vermietung · Düsseldorf, Deutschland
           </p>
         </div>
