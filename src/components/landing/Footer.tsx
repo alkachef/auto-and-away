@@ -59,7 +59,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-foreground/70 hover:text-foreground transition-colors"
+                      className="text-[hsl(0,0%,30%)] hover:text-[hsl(0,0%,5%)] transition-colors"
                     >
                       {link}
                     </a>
