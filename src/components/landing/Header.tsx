@@ -64,7 +64,7 @@ const Header = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-[hsl(0,0%,20%)] hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
