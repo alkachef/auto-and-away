@@ -34,7 +34,11 @@ export default {
   			gta: [
   				'Bebas Neue',
   				'sans-serif'
-  			],
+   			],
+   			cursive: [
+   				'Dancing Script',
+   				'cursive'
+   			],
   			serif: [
   				'Crimson Pro',
   				'ui-serif',
