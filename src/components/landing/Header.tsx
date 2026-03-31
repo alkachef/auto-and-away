@@ -12,7 +12,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0,0%,85%)] backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0,0%,85%)] backdrop-blur-sm border-b border-border text-[hsl(0,0%,10%)]">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -29,7 +29,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-foreground hover:text-accent transition-colors duration-300 font-medium"
+                className="text-[hsl(0,0%,20%)] hover:text-accent transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
@@ -38,7 +38,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+491234567890" className="flex items-center gap-2 text-foreground hover:text-accent transition-colors">
+            <a href="tel:+491234567890" className="flex items-center gap-2 text-[hsl(0,0%,20%)] hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">+49 123 456 7890</span>
             </a>
@@ -49,7 +49,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-[hsl(0,0%,10%)]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -64,7 +64,7 @@ const Header = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-[hsl(0,0%,20%)] hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
