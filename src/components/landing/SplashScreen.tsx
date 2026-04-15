@@ -23,7 +23,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       <img
         src={logo}
         alt="LuayCars"
-        className="h-32 md:h-48 w-auto transition-opacity duration-700"
+        className="h-48 md:h-72 w-auto transition-opacity duration-700 drop-shadow-[0_0_40px_rgba(255,255,255,0.3)]"
         style={{ opacity: phase === 'fade-in' ? 0 : 1 }}
       />
     </div>
