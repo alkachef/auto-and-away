@@ -10,6 +10,9 @@ const HeroSection = () => {
           src={heroCar}
           alt="Luxus Supercar"
           className="w-full h-full object-cover opacity-60"
+          style={{
+            animation: 'carDrive 20s ease-in-out infinite',
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
       </div>
