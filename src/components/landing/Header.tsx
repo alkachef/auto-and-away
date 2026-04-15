@@ -13,12 +13,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0,0%,85%)] backdrop-blur-sm border-b border-border text-[hsl(0,0%,10%)]">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2 md:py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="LuayCars" className="h-24 w-auto" />
-            <span className="font-cursive text-2xl tracking-wider italic">
+          <Link to="/" className="flex items-center gap-2 md:gap-3 group">
+            <img src={logo} alt="LuayCars" className="h-14 md:h-24 w-auto" />
+            <span className="font-cursive text-xl md:text-2xl tracking-wider italic">
               LuayCars
             </span>
           </Link>
