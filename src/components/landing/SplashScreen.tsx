@@ -20,12 +20,16 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       className="fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-500"
       style={{ opacity: phase === 'fade-out' ? 0 : 1 }}
     >
-      <img
-        src={logo}
-        alt="LuayCars"
-        className="h-48 md:h-72 w-auto transition-opacity duration-700 brightness-150 contrast-125 drop-shadow-[0_0_60px_rgba(255,255,255,0.5)]"
+      <div
+        className="rounded-full bg-[hsl(0,0%,85%)] p-8 md:p-12 transition-opacity duration-700 shadow-[0_0_80px_rgba(255,255,255,0.3)]"
         style={{ opacity: phase === 'fade-in' ? 0 : 1 }}
-      />
+      >
+        <img
+          src={logo}
+          alt="LuayCars"
+          className="h-40 md:h-60 w-auto"
+        />
+      </div>
     </div>
   );
 };
