@@ -20,12 +20,24 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       className="fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-500"
       style={{ opacity: phase === 'fade-out' ? 0 : 1 }}
     >
-      <img
-        src={logo}
-        alt="LuayCars"
-        className="h-48 md:h-72 w-auto transition-opacity duration-700 brightness-200 drop-shadow-[0_0_80px_rgba(255,255,255,0.6)]"
-        style={{ opacity: phase === 'fade-in' ? 0 : 1 }}
-      />
+      <div className="relative flex items-center justify-center">
+        <div
+          className="absolute rounded-full transition-opacity duration-700"
+          style={{
+            width: '500px',
+            height: '500px',
+            background: 'radial-gradient(circle, rgba(180,180,180,0.35) 0%, rgba(120,120,120,0.15) 30%, rgba(80,80,80,0.05) 60%, transparent 80%)',
+            filter: 'blur(40px)',
+            opacity: phase === 'fade-in' ? 0 : 1,
+          }}
+        />
+        <img
+          src={logo}
+          alt="LuayCars"
+          className="relative z-10 h-48 md:h-72 w-auto transition-opacity duration-700 brightness-200"
+          style={{ opacity: phase === 'fade-in' ? 0 : 1 }}
+        />
+      </div>
     </div>
   );
 };
